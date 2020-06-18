@@ -16,6 +16,10 @@ spec:
     - destination:
         host: front-end.production.svc.cluster.local
         subset: v2
+    route:
+    - destination:
+        host: front-end.production.svc.cluster.local
+	subset: v3
   - route:
     - destination:
         host: front-end.production.svc.cluster.local
